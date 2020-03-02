@@ -10,7 +10,7 @@ ArrayList <String> bob = new ArrayList<>();
 		//2. Add five Strings to your list
 
 bob.add("Bob");
-bob.add("Bob Jr.");
+bob.add("Beb Jr.");
 bob.add("Bob Jr. Jr");
 bob.add("Bob Jr. Jr. Jr.");
 bob.add("Bob Jr. Jr. Jr. Jr.");
@@ -30,7 +30,15 @@ bob.add("Bob Jr. Jr. Jr. Jr.");
 		//6. Print all the Strings in reverse order.
 		for (int i = bob.size()-1; i > 0; i--) {
 			System.out.println(bob.get(i));
+			for(int j=0;j>bob.get(i).length();j++) {
+				if(bob.get(i).charAt(j)=='e') {
+					System.out.println(bob.get(i));
+				}
+				
+			}
 		}
 		//7. Print only the Strings that have the letter 'e' in them.
+		
+		
 	}
 }
